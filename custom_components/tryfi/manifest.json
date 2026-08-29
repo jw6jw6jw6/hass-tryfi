@@ -1,15 +1,17 @@
 {
-    "domain": "tryfi",
-    "name": "TryFi",
-    "version": "0.0.26",
-    "config_flow": true,
-    "documentation": "https://github.com/sbabcock23/hass-tryfi",
-    "issue_tracker": "https://github.com/sbabcock23/hass-tryfi/issues",
-    "requirements": [
-      "pytryfi>=0.0.21"
-    ],
-    "dependencies": [],
-    "iot_class": "cloud_polling",
-    "codeowners": ["@sbabcock23"]
-  }
-  
+  "domain": "tryfi",
+  "name": "TryFi",
+  "version": "0.0.26.post1",
+  "config_flow": true,
+  "documentation": "https://github.com/disruptivepatternmaterial/hass-tryfi",
+  "issue_tracker": "https://github.com/disruptivepatternmaterial/hass-tryfi/issues",
+  "requirements": [
+    "pytryfi @ git+https://github.com/disruptivepatternmaterial/pytryfi@v0.0.21.post1"
+  ],
+  "dependencies": [],
+  "iot_class": "cloud_polling",
+  "codeowners": [
+    "@sbabcock23",
+    "@disruptivepatternmaterial"
+  ]
+}
