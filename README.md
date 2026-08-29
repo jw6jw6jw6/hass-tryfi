@@ -8,7 +8,7 @@
 > this integration.
 >
 > This fork changes one thing: `manifest.json` requires
-> [`disruptivepatternmaterial/pytryfi@v0.0.21.post1`](https://github.com/disruptivepatternmaterial/pytryfi/tree/v0.0.21.post1),
+> [`disruptivepatternmaterial/pytryfi@v0.0.22.post1`](https://github.com/disruptivepatternmaterial/pytryfi/tree/v0.0.22.post1),
 > which swaps the `sentry_sdk` calls for no-ops and drops the dependency. The
 > call sites are left untouched so the diff stays small and rebases cleanly.
 >
