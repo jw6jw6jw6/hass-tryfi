@@ -6,7 +6,7 @@
   "documentation": "https://github.com/disruptivepatternmaterial/hass-tryfi",
   "issue_tracker": "https://github.com/disruptivepatternmaterial/hass-tryfi/issues",
   "requirements": [
-    "pytryfi @ git+https://github.com/disruptivepatternmaterial/pytryfi@v0.0.22.post1"
+    "pytryfi @ git+https://github.com/jw6jw6jw6/pytryfi@main"
   ],
   "dependencies": [],
   "iot_class": "cloud_polling",

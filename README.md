@@ -1,25 +1,24 @@
 <!-- dpm-fork-note -->
 > ### Why this fork exists
 >
-> Upstream `pytryfi` calls `sentry_sdk.init()` with a DSN belonging to the
-> library author. `sentry_sdk`'s logging integration attaches to the **root**
-> logger, which means it captures every `ERROR` record raised anywhere in the
-> host Home Assistant instance and forwards it off-box - not just errors from
-> this integration.
->
-> This fork changes one thing: `manifest.json` requires
-> [`disruptivepatternmaterial/pytryfi@v0.0.22.post1`](https://github.com/disruptivepatternmaterial/pytryfi/tree/v0.0.22.post1),
-> which swaps the `sentry_sdk` calls for no-ops and drops the dependency. The
-> call sites are left untouched so the diff stays small and rebases cleanly.
+> `manifest.json` requires
+> [`jw6jw6jw6/pytryfi@main`](https://github.com/jw6jw6jw6/pytryfi), the
+> parent repository this integration is a submodule of. That build adds
+> behavior stats (barking, licking, scratching, eating, drinking) for Series 3+
+> collars and does not call `sentry_sdk.init()`, so nothing from the host Home
+> Assistant instance is forwarded off-box.
 >
 > Everything else is upstream [sbabcock23/hass-tryfi](https://github.com/sbabcock23/hass-tryfi).
 > Install via HACS as a custom repository. The domain is unchanged (`tryfi`),
 > so existing entities and their history carry over.
 >
+> For local development, `scripts/setup` installs the parent checkout in
+> editable mode, so changes to `../pytryfi` are picked up directly.
+>
 > Verify after installing:
 > ```bash
-> docker exec home-assistant python3 -c "import importlib.metadata as m; print(m.version('pytryfi'))"
-> # expect 0.0.21.post1
+> docker exec home-assistant python3 -c "import pytryfi.const as c; print(c.PYTRYFI_VERSION)"
+> # expect 0.0.26
 > ```
 
 # TryFi for Home Assistant
