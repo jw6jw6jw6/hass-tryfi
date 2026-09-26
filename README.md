@@ -29,7 +29,7 @@
 [![](https://img.shields.io/github/license/sbabcock23/hass-tryfi?style=for-the-badge)](LICENSE)
 [![](https://img.shields.io/github/workflow/status/sbabcock23/hass-tryfi/Validate%20with%20hassfest?style=for-the-badge)](https://github.com/sbabcock23/hass-tryfi/actions)
 
-This allows you to integrate [TryFi](https://tryfi.com) Smart GPS Collars with Home Assistant.
+This allows you to integrate [TryFi](https://tryfi.com) Smart GPS Collars with Home Assistant .
 
 ## Features
 Current functionality includes:
